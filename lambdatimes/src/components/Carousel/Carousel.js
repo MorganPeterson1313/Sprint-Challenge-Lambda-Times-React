@@ -43,7 +43,7 @@ this.setState({ carouselData: carouselData})
 
 
   rightClick = () => {
-    const contentIndex = 0;
+  
 
     if (this.contentIndex + 1 > this.state.carouselData.length - 1  ){
 
@@ -77,7 +77,7 @@ this.setState({ carouselData: carouselData})
     return (
       <div className="carousel" onClick={()=> this.selectedImage()}>
         <div className="left-button" onClick={this.leftClick}>{"<"}</div>
-        {this.selectedImage()}
+       <section>{this.selectedImage()}</section> 
         <div className="right-button" onClick={this.rightClick}>{">"}</div>
       </div>
     )
